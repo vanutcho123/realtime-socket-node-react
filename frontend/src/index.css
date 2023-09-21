@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,400;6..12,500;6..12,600;6..12,700;6..12,800;6..12,900;6..12,1000&display=swap");
+body {
+  font-family: "Nunito Sans", sans-serif;
+  background: rgb(40, 40, 40);
+  color: #fff;
+}
+
+/* aLL USER */
+
+.chat-box {
+  max-height: calc(100vh - 10rem);
+  overflow-y: auto;
+  background: rgb(25, 25, 25);
+  border-radius: 10px;
+}
+.messages-box {
+  height: 85vh;
+}
+
+.user-online {
+  position: absolute;
+  background: rgb(26, 220, 26);
+  top: -10px;
+  right: -10px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+.chat-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem;
+  background: rgb(30, 30, 30);
+}
+
+.all-users {
+  display: flex;
+  margin-bottom: 1rem;
+}
+.user-card {
+  position: relative;
+  border-bottom: 1px solid rgb(100, 100, 100);
+  width: 380px;
+}
+.single-user {
+  background: rgb(0, 213, 255);
+  cursor: pointer;
+  padding: 5px 7px;
+  margin-right: 0.5rem;
+  position: relative;
+}
+
+.notification {
+  position: relative;
+}
+
+.notification-icon {
+  color: white;
+  cursor: pointer;
+  position: relative;
+  margin-right: 1rem;
+}
+
+.notification-box {
+  max-height: 50vh;
+  width: 300px;
+  position: absolute;
+  top: 2rem;
+  right: 0;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background: #181d31;
+  color: white;
+  z-index: 5;
+}
+
+.notification-header {
+  padding: 1rem;
+  padding-bottom: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.notification-box h3 {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.mark-as-read {
+  cursor: pointer;
+  font-weight: 700;
+  opacity: 0.8;
+}
+
+.notification {
+  font-size: 14px;
+  margin: 1rem 0;
+  padding-bottom: 0.2rem;
+  border-bottom: 1px solid rgb(207, 207, 207);
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+}
+
+.notification.not-read {
+  background: #263159;
+}
+.notification-time {
+  margin-top: 0.2rem;
+  font-size: 12px;
+  color: #e0e0e0;
+}
+.notification-count {
+  display: flex;
+  background: #00bd9b;
+  height: 25px;
+  width: 25px;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: -10px;
+  right: -15px;
+}
+.this-user-notification {
+  display: flex;
+  background: #00bd9b;
+  height: 20px;
+  width: 20px;
+  font-size: 12px;
+  font-weight: 700;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+}
